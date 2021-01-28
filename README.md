@@ -2,10 +2,10 @@
 Problem Solving
 
 ## 프로그래머스 
-https://github.com/HoonDragonite/PS/tree/main/JavaPS/src/programmers
+### Level 1부터
 
 ## 백준
-https://github.com/HoonDragonite/PS/tree/main/JavaPS/src/baekjoon
+### 단계별로 풀어보기
 
 ### ✏ 다시 풀어볼 것
 - 2577번 숫자의 개수
