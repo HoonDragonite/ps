@@ -1,8 +1,11 @@
 import java.util.*;
 
+/*
+	키워드 : 아스키코드, 대소문자 구분안함
+*/
+
 public class Main {
-	
-	
+
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		String word = "";

@@ -2,8 +2,11 @@ package ps;
 
 import java.util.*;
 
+/*
+	키워드 : 아스키코드
+*/
+
 public class Main {
-	
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);

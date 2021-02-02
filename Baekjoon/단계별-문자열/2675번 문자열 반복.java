@@ -1,8 +1,10 @@
 import java.util.*;
 
+/*
+	키워드 : 반복문 잘 쓰기
+*/
+
 public class Main {
-	
-	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		
