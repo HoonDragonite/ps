@@ -1,3 +1,4 @@
+''' 시간 초과
 r, g, b = map(int, input().split())
 
 for i in range(0, r):
@@ -6,3 +7,4 @@ for i in range(0, r):
             print(i, j, k)
 
 print(r*g*b)
+'''
