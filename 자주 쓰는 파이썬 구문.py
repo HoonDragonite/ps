@@ -1,3 +1,11 @@
+# 형변환
+a = 10
+int(a)
+float(a)
+str(a)
+chr(a)
+bool(a)
+
 # 배열 순회1 정해진 수만큼
 len = 10
 for _ in range(10):
@@ -7,6 +15,11 @@ for _ in range(10):
 numToTen = list(range(1, 11))
 for i in numToTen:
     print(i)
+
+# 문자열 순회 문자열의 문자를 순회
+str = "abcde"
+for c in str:
+    print(c)
 
 # 리스트 컴프리헨션 짝수, 홀수 
 evenArr = [i for i in range(1, 11) if i % 2 == 0]
