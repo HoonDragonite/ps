@@ -24,6 +24,9 @@ for c in str:
 # 리스트 컴프리헨션 짝수, 홀수 
 evenArr = [i for i in range(1, 11) if i % 2 == 0]
 
+# 숫자 하나 입력받기
+num = int(input())
+
 # 공백으로 구분하여 변수에 입력받기
 n, m, k = map(int, input().split())
 
@@ -39,6 +42,9 @@ numArr = list(map(int, input().split()))
 import sys
 str = sys.stdin.readline().rstrip()
 
+# n개의 0으로 채운 리스트 만들기
+arrayOfZero = [0 for _ in range(n)]
+
 # NxM 행렬 리스트로 만들기
 n = 3
 m = 4
@@ -51,3 +57,20 @@ removeArr = [3, 5]
 
 result = [i for i in arr if i not in removeArr]
 print(result)
+
+# 한 줄 비교식
+print(a if a > b else b)
+
+# 반올림하여 소숫점 2번째 자리까지 출력
+print("%.2f" % 0.036)
+
+# 일렬로 출력하기
+print(arr, end=" ")
+
+# 지수 표현
+print(3**2)
+
+# 난수 뽑기 (랜덤)
+import random
+random.random(1, 11) # 1부터 10까지
+
