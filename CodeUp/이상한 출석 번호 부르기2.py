@@ -5,3 +5,4 @@ say.reverse()
 
 for i in say:
     print(i, end=" ")
+    

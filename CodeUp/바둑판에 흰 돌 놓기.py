@@ -11,3 +11,4 @@ for i in range(n):
     for j in range(m):
         print(array[i][j], end=" ")
     print("")
+    

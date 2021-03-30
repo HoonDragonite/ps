@@ -79,4 +79,3 @@ print(3**2)
 # 난수 뽑기 (랜덤)
 import random
 random.random(1, 11) # 1부터 10까지
-
