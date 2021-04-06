@@ -1,7 +1,3 @@
-a = list(range(10, 15))
+a= ["a"]
 
-print(a)
-
-a.pop(3)
-
-print(a)
+print(a[-1])
