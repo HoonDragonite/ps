@@ -1,3 +1,7 @@
-a= ["a"]
+a = ""
 
-print(a[-1])
+if a == "":
+    a = "a"
+
+
+print(a)
