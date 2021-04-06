@@ -1,16 +1,12 @@
-'''
-5단계 new_id가 빈 문자열이라면, new_id에 "a"를 대입합니다.
-6단계 new_id의 길이가 16자 이상이면, new_id의 첫 15개의 문자를 제외한 나머지 문자들을 모두 제거합니다.
-     만약 제거 후 마침표(.)가 new_id의 끝에 위치한다면 끝에 위치한 마침표(.) 문자를 제거합니다.
-7단계 new_id의 길이가 2자 이하라면, new_id의 마지막 문자를 new_id의 길이가 3이 될 때까지 반복해서 끝에 붙입니다.
-'''
-
 def solution(new_id):
     new_id = levelOne(new_id)
     new_id = levelTwo(new_id)
     new_id = levelThree(new_id)    
     new_id = levelFour(new_id)
     new_id = levelFive(new_id)
+    new_id = levelSix(new_id)
+    new_id = levelSeven(new_id)
+
     answer = new_id
     return answer
 
@@ -58,12 +54,28 @@ def levelFive(new_id):
         new_id = "a"
     return new_id
 
-def levelSix(new_id):
-    result = new_id
-    return result
+def levelSix(new_id): 
+    arr = list(new_id)
+    resultArr = []
 
-def levelSeven(new_id):
-    result = new_id
+    if len(arr) > 15:
+        resultArr = arr[:15]
+        if resultArr[-1] == ".": resultArr.pop()
+    else:
+        resultArr = arr
+
+    return ''.join(resultArr)
+
+def levelSeven(new_id): 
+    arr = list(new_id)
+
+    if 0 < len(arr) < 3:
+        while len(arr) != 3:
+            arr.append(arr[-1])
+        result = ''.join(arr)
+    else:
+        result = new_id
+
     return result
 
 # Test

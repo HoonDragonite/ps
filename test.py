@@ -1,7 +1,4 @@
-a = ""
+a = 2
 
-if a == "":
-    a = "a"
-
-
-print(a)
+if 0 < a <3:
+    print("hi")
