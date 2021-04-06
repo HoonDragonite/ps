@@ -11,7 +11,7 @@ def solution(new_id):
     new_id = levelTwo(new_id)
     new_id = levelThree(new_id)    
     new_id = levelFour(new_id)
-    
+
     answer = new_id
     return answer
 
@@ -44,7 +44,14 @@ def levelThree(new_id):
     return ''.join(resultArr)
 
 def levelFour(new_id):
-    result = new_id
+    arr = list(new_id)
+
+    if arr[-1] == ".":
+        arr.pop(-1)
+    if arr[0] == ".":
+        arr.pop(0)
+
+    result = ''.join(arr)
     return result
 
 def levelFive(new_id):
