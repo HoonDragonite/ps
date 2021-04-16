@@ -6,6 +6,10 @@ str(a)
 chr(a)
 bool(a)
 
+# 리스트 슬라이싱 3번째부터 5번째까지
+arr = list(range(10))
+arr[3-1:5]
+
 # 배열 순회1 정해진 수만큼
 len = 10
 for _ in range(10):
