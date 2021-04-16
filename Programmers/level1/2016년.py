@@ -6,4 +6,4 @@ def solution(a, b):
     answer = dayList[datetime.date(year,a,b).weekday()]
     return answer
 
-print(dayList[datetime.date(2016,n,m).weekday()])
+print(solution(5, 24))
