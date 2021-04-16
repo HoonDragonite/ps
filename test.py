@@ -1,4 +1,3 @@
-a = 2
+bbb = [1, 2, 3]
 
-if 0 < a <3:
-    print("hi")
+print(bbb[1:])
