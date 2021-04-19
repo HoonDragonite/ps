@@ -6,6 +6,10 @@ str(a)
 chr(a)
 bool(a)
 
+# 리스트 슬라이싱 3번째부터 5번째까지
+arr = list(range(10))
+arr[3-1:5]
+
 # 배열 순회1 정해진 수만큼
 len = 10
 for _ in range(10):
@@ -79,3 +83,30 @@ print(3**2)
 # 난수 뽑기 (랜덤)
 import random
 random.random(1, 11) # 1부터 10까지
+
+# 자릿수의 합
+def calc10digit(num): 
+    n = 0
+    sum = 0
+    while True:
+        n = int(num % 10)
+        num = int(num / 10)
+        sum = sum + n
+        if num == 0:
+            break
+
+    return sum
+
+# 자릿수의 합 + 자기자신
+def calc10digit2(num): 
+    n = 0
+    sum = 0
+    sum += num
+    while True:
+        n = int(num % 10)
+        num = int(num / 10)
+        sum = sum + n
+        if num == 0:
+            break
+
+    return sum
