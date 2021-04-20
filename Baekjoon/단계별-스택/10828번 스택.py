@@ -28,4 +28,14 @@ orderArr = []
 for _ in range(orderCount):
     orderArr.append(list(sys.stdin.readline().split()))
 
-print(orderArr)
+for order in orderArr:
+    if order[0] == "push":
+        push(int(order[1]))
+    if order[0] == "pop":
+        print(pop())
+    if order[0] == "size":
+        print(size())
+    if order[0] == "empty":
+        print(empty())
+    if order[0] == "top":
+        print(top())

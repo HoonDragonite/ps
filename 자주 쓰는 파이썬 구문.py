@@ -1,3 +1,7 @@
+# input() 시간 초과 시
+import sys
+sys.stdin.readline() # input()을 대체
+
 # 형변환
 a = 10
 int(a)
