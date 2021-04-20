@@ -25,6 +25,15 @@ str = "abcde"
 for c in str:
     print(c)
 
+# 배열 순회 자기 자신 아닌 것들과 비교
+dataArr = list(range(5))
+
+for i, data in enumerate(dataArr):
+    print("i : " + str(i))
+    for j, otherData in enumerate(dataArr):
+        if i == j: continue
+        print("j : " + str(j))
+
 # 리스트 컴프리헨션 짝수, 홀수 
 evenArr = [i for i in range(1, 11) if i % 2 == 0]
 
