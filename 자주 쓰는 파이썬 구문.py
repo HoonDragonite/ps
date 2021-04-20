@@ -46,6 +46,17 @@ n, m, k = map(int, input().split())
 # 공백으로 구분하여 리스트에 입력받기
 numArr = list(map(int, input().split()))
 
+# 문자열 배열을 문자단위 배열로 입력받기
+y, x = map(int, input().split())
+
+dataArr = []
+for _ in range(y):
+    str = input()
+    data = []
+    for s in str:
+        data.append(s)
+    dataArr.append(data)
+
 # 오름차순 정렬
 [1, 4, 3, 2, 5].sort()
 # 내림차순 정렬
