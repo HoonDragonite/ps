@@ -1,20 +1,27 @@
-dataArr = []
-dataCount = int(input())
+orderCount = int(input())
 
-for _ in range(dataCount):
-    dataArr.append(input())
+numArr = []
+for _ in range(orderCount):
+    numArr.append(int(input()))
 
-for data in dataArr:
-    stack = []
-    for d in data:
-        if d == "(":
-            stack.append(d)
-        elif d == ")" and len(stack) == 0:
-            stack.append("err")
-        elif d == ")" and len(stack) != 0:
-            if stack[-1] == "err":
-                continue
+stack = []
+orderList = []
+for num in numArr:
+    while True:
+        if len(stack) == 0:
+            stack.append(1)
+            orderList.append("+")
+        if len(stack) != 0 and num == stack[-1]:
             stack.pop()
-    if len(stack) == 0:
-        print("YES")
-    else: print("NO")
+            orderList.append("-")
+            break
+        if len(stack) != 0 and num > stack[-1]:
+            stack.append(stack[-1] + 1)
+            orderList.append("+")
+        elif len(stack) != 0 and num < stack[-1]:
+            stack.pop()
+            orderList.append("-")
+
+
+print(orderList)
+print(stack)
