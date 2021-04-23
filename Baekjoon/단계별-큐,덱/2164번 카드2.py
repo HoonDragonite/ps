@@ -1,12 +1,3 @@
-'''
-1 위
-N 아래
-
-1을 버리고 2를 제일 밑으로 옮긴다
-
-가장 마짐가의 카드
-'''
-
 from collections import deque
 
 count = int(input())
