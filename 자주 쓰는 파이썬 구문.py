@@ -134,3 +134,16 @@ def calc10digit2(num):
             break
 
     return sum
+
+# 배열 중복 문자 제거
+def deleteJungbok(arr):
+    answer = []
+    
+    for i, a in enumerate(arr):
+        if i == 0 : answer.append(a)
+        else:
+            if arr[i-1] == a:
+                continue
+            else: answer.append(a)
+    
+    return answer
