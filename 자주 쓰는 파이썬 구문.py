@@ -53,6 +53,13 @@ numArr = list(map(int, input().split()))
 # 문자열 배열을 문자단위 배열로 입력받기
 y, x = map(int, input().split())
 
+# 한 배열을 중복없이 두 개의 인덱스로 순회
+numbers = list(range(5))
+for i, n1 in enumerate(numbers):
+        for j, n2 in enumerate(numbers[i+1:]):
+            print(str(n1) + ", " + str(n2))
+
+
 dataArr = []
 for _ in range(y):
     str = input()
