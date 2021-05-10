@@ -2,14 +2,14 @@ def solution():
     n, m = map(int, input().split())
 
     dataArr = []
-    for i in list(range(n)):
-        dataArr.append(list(map(int, input().split())))
-    
-    minDataAtRow = []
-    for data in dataArr:
-        minDataAtRow.append(min(data))
 
-    answer = max(minDataAtRow)
+    minDataArr = []
+    for i in range(n):
+        data = list(map(int, input().split()))
+        minData = min(data)
+        minDataArr.append(minData)
+
+    answer = max(minDataArr)
 
     return answer
 
