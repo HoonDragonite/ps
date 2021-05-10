@@ -20,7 +20,7 @@ def solution(n, arr1, arr2):
                 data = "#"
             answerData.append(data)
         answer.append(''.join(answerData))
-        
+
     return answer
 
 n = 5
@@ -32,3 +32,23 @@ n = 6
 arr1 = [46, 33, 33 ,22, 31, 50]
 arr2 = [27 ,56, 19, 14, 14, 10]
 print(solution(n, arr1, arr2))
+
+'''
+다른 사람 풀이
+def solution(n, arr1, arr2):
+    answer = []
+    for i,j in zip(arr1,arr2):
+        a12 = str(bin(i|j)[2:])
+        a12=a12.rjust(n,'0')
+        a12=a12.replace('1','#')
+        a12=a12.replace('0',' ')
+        answer.append(a12)
+    return answer
+
+def solution(n, arr1, arr2):
+    answer = []
+    for i in range(n):
+        a = str(bin(arr1[i]|arr2[i])[2:]).rjust(n,'0').replace('1','#').replace('0',' ')
+        answer.append(a)
+    return answer
+'''
