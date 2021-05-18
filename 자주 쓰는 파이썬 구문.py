@@ -1,6 +1,10 @@
-# input() 시간 초과 시
+# 입출력 가속
 import sys
 sys.stdin.readline() # input()을 대체
+
+from sys import stdin, stdout
+input = stdin.readline 
+print = stdout.write
 
 # 형변환
 a = 10
@@ -53,6 +57,12 @@ numArr = list(map(int, input().split()))
 # 문자열 배열을 문자단위 배열로 입력받기
 y, x = map(int, input().split())
 
+arr = [list(input()) for _ in range(N)]
+
+# 한 줄에는 수의 개수 n 가 주어지고, 다음에는 n개의 수가 주어진다
+n, *arr = map(int, input().split())
+
+
 # 한 배열을 중복없이 두 개의 인덱스로 순회
 numbers = list(range(5))
 for i, n1 in enumerate(numbers):
@@ -79,6 +89,14 @@ str = sys.stdin.readline().rstrip()
 
 # n개의 0으로 채운 리스트 만들기
 arrayOfZero = [0 for _ in range(n)]
+
+# NxM 리스트 만들기
+'''
+2
+1 2 3
+4 5 6
+'''
+arr = [list(map(int, input().split())) for _ in range(int(input()))]
 
 # NxM 행렬 리스트로 만들기
 n = 3
