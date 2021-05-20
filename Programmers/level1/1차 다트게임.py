@@ -1,30 +1,26 @@
 def solution(dartResult):
     answer = 0
+    scoreType = ["S", "D", "T"]
     scoreList = []
     score = ""
+    idx = -1
+
     for c in dartResult:
         if c.isdigit() == True:
             score += c
-        elif c == "S":
-            scoreList.append(int(score))
-            score = ""
-        elif c == "D":
-            scoreList.append(int(score) ** 2)
-            score = ""
-        elif c == "T":
-            scoreList.append(int(score) ** 3)
+        elif c in scoreType:
+            scoreList.append(int(score) ** (scoreType.index(c)+1))
+            idx += 1
             score = ""
         elif c == "*":
             if len(scoreList) == 1:
-                scoreList.append(scoreList.pop() * 2)
+                scoreList[idx] *= 2
             else:
-                now = scoreList.pop() * 2
-                before = scoreList.pop() * 2
-                scoreList.append(before)
-                scoreList.append(now)
+                scoreList[idx] *= 2
+                scoreList[idx-1] *= 2
         elif c == "#":
-            now = scoreList.pop() * -1
-            scoreList.append(now)
+            scoreList[idx] *= -1
+            
     answer = sum(scoreList)
     return answer
 
