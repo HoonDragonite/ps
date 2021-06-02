@@ -27,21 +27,21 @@ class BinaryTree:
 
     def preOrderTraversal(self, node):
         if node == None : return
-        print(node, end=' -> ')
+        print(node, end=' ')
         self.preOrderTraversal(node.left)
         self.preOrderTraversal(node.right)
     
     def inOrderTraversal(self, node):
         if node == None : return
         self.inOrderTraversal(node.left)
-        print(node, end=' -> ')
+        print(node, end=' ')
         self.inOrderTraversal(node.right)
 
     def postOrderTraversal(self, node):
         if node == None : return
         self.postOrderTraversal(node.left)
         self.postOrderTraversal(node.right)
-        print(node, end=' -> ')
+        print(node, end=' ')
 
     def depth(self):
         l = self.left.depth() if self.left else 0
@@ -73,6 +73,8 @@ node.right = newNode2
   d e f g
 '''
 print(tree.root)
-print(tree.preOrderTraversal(tree.root))
-print(tree.inOrderTraversal(tree.root))
-print(tree.postOrderTraversal(tree.root))
+tree.preOrderTraversal(tree.root)
+print()
+tree.inOrderTraversal(tree.root)
+print()
+tree.postOrderTraversal(tree.root)
