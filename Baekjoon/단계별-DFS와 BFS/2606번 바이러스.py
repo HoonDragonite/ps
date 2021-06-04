@@ -2,19 +2,19 @@ from collections import deque
 
 ''' Depth First Search (DFS) '''
 def dfs(x):
-    print(x, end=' ')
+    # print(x, end=' ')
     visited[x] = True
     for y in graph[x]:
         if not(visited[y]):
             dfs(y)
-
+            
 ''' Breadth First Search (BFS) '''
 def bfs(x):
     q = deque([x])
     visited[x] = True
     while q:
         x = q.popleft()
-        print(x, end=' ')
+        # print(x, end=' ')
         for y in graph[x]:
             if not visited[y]:
                 q.append(y)
@@ -36,12 +36,17 @@ for e in graph:
 
 visited = [False] * (n + 1)
 dfs(start)
-print()
-visited = [False] * (n + 1)
-bfs(start)
-
+print(visited.count(True) - 1)
 
 '''
+BFS
+visited = [False] * (n + 1)
+bfs(start)
+print(visited.count(True) - 1)
+'''
+
+'''
+Input Data
 7
 6
 1 2

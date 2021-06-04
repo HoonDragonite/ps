@@ -1,3 +1,11 @@
+#자료형 정리
+'''
+리스트 : [1, 2, 3]
+딕셔너리 : {name:"sh", age="27"}
+집합,set : {1,2,3} 중복과 순서가 없는
+튜플 : tuple = (1,2,3) immutable한 빠른 리스트, 다익스트라 최단경로
+'''
+
 # 입출력 가속
 import sys
 sys.stdin.readline() # input()을 대체
