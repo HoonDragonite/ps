@@ -49,5 +49,3 @@ print(bfs_queue(start))
 1 2 4 3 
 1 2 3 4
 '''
-
-# https://jeinalog.tistory.com/18

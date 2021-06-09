@@ -62,9 +62,10 @@ n, m, k = map(int, input().split())
 # 공백으로 구분하여 리스트에 입력받기
 numArr = list(map(int, input().split()))
 
-# 문자열 배열을 문자단위 배열로 입력받기
-y, x = map(int, input().split())
-
+# 연속된 숫자를 숫자단위 배열로 입력받기 (숫자그래프)
+n, m, start = map(int, input().split())
+graph = [[] for _ in range(n + 1)]
+# 연속된 문자를 문자단위 배열로 입력받기 (문자그래프)
 arr = [list(input()) for _ in range(N)]
 
 # 한 줄에는 수의 개수 n 가 주어지고, 다음에는 n개의 수가 주어진다
