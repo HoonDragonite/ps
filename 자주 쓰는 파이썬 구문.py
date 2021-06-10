@@ -6,6 +6,9 @@
 튜플 : tuple = (1,2,3) immutable한 빠른 리스트, 다익스트라 최단경로
 '''
 
+#절대값
+abs()
+
 # 입출력 가속
 import sys
 sys.stdin.readline() # input()을 대체

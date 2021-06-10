@@ -1,11 +1,11 @@
-from collections import deque
-
 def dfs_recursive(x, visited=[]):
     visited.append(x)
     for n in graph[x]:
         if n not in visited:
             dfs_recursive(n, visited)
     return visited
+
+from collections import deque
 
 def bfs_queue(x, visited=[]):
     q = deque([x])
