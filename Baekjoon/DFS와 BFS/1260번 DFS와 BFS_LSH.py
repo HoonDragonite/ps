@@ -6,7 +6,6 @@ def dfs_recursive(x, visited=[]):
     return visited
 
 from collections import deque
-
 def bfs_queue(x, visited=[]):
     q = deque([x])
     while q:
