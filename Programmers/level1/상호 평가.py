@@ -3,14 +3,7 @@ def solution(scores):
     scoreByStudent = []
     averScoreByStudent = []
 
-    # 빈 2차원 리스트 생성
-    for _ in range(len(scores)):
-        scoreByStudent.append([])
-
-    # 학생별 점수 배열 생성
-    for score in scores:
-        for i,s in enumerate(score):
-            scoreByStudent[i].append(s)
+    scoreByStudent = list(map(list, zip(*scores)))
 
     # 자기점수가 유일한 최고점, 최소점인지 확인 
     for i, score in enumerate(scoreByStudent):

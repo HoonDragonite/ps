@@ -122,6 +122,10 @@ for i in range(n):
         print(array[i][j], end=" ")
     print("")
 
+# 행렬 변환하기
+scores = [[1,2,3], [4,5,6], [7,8,9]]
+newScores = list(map(list, zip(*scores)))
+
 # 특정한 값의 원소 모두 지우기, remove()는 O(n)으로 오래 걸림
 arr = [1, 2, 3, 4, 5, 5, 5]
 removeArr = [3, 5]
