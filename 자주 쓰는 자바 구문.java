@@ -96,7 +96,7 @@ String subA = a.substring(2,3); // 인덱스 2~3
 
 
 // 문자열 반대로 출력
-StringBuilder sb = new StringBuilder();
+StringBuffer sb = new StringBuffer(str);
 sb.reverse();
 
 
